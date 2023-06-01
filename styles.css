@@ -1,0 +1,81 @@
+.banner {
+  text-align: center;
+  background-image: url("./images/bannerbg.jpeg");
+  background-size: initial;
+  background-position: center;
+  opacity: 0.85;
+  padding: 8px;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.button {
+  background-image: url("./images/bannerbg.jpeg");
+  background-size: initial;
+  background-position: center;
+  color: white;
+  border-radius: 25%;
+  display: flex;
+  z-index: 999;
+  position: absolute;
+  padding: 20px;
+  top: 350px;
+  left: 220px;
+  font-size: 3em;
+  font-family: "MedievalSharp", cursive;
+  animation: buttonShows 2s linear ;
+}
+
+.dead {
+  animation: die 1.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes die {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+@keyframes buttonShows {
+    0% {
+      transform: scale(0);
+    }
+    25% {
+      transform: scale(.25);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    75% {
+      transform: scale(.75);
+      }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
