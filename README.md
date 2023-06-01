@@ -1,4 +1,4 @@
-# Game of thrones inspired "I CAN HAZ CHEEZBURGER?!??"
+# Game of thrones inspired - Space Invaders clone"
 
 <p align="center"><img src= "./images/main-page.png"></p>
 <p align="center"><img src= "./images/game-running.png"></p>
